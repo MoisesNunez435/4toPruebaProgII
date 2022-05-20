@@ -47,6 +47,7 @@ namespace PepitoSchool
                     Programacion = (int)nudProgramacion.Value,
                     Matematica = (int)nudMatematica.Value,
                     Estadistica = (int)nudEstadistica.Value,
+                  //Falto implementar el metodo para calcular el promedio, no supe como, pero el metodo ahi esta kssksks
             };
                 estudianteservice.Create(estudiante);
                 LlenarDGV();
