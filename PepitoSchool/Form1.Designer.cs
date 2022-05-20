@@ -152,7 +152,7 @@ namespace PepitoSchool
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(89, 16);
+            this.txtNombre.Location = new System.Drawing.Point(91, 19);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(125, 27);
             this.txtNombre.TabIndex = 10;
@@ -223,6 +223,7 @@ namespace PepitoSchool
             // 
             // dgvEstudiantes
             // 
+            this.dgvEstudiantes.AllowDrop = true;
             this.dgvEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEstudiantes.Location = new System.Drawing.Point(8, 287);
             this.dgvEstudiantes.Name = "dgvEstudiantes";
@@ -249,6 +250,7 @@ namespace PepitoSchool
             this.btnEliminar.TabIndex = 22;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnActualizar
             // 
@@ -258,6 +260,7 @@ namespace PepitoSchool
             this.btnActualizar.TabIndex = 23;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // Form1
             // 
@@ -323,10 +326,10 @@ namespace PepitoSchool
         private System.Windows.Forms.NumericUpDown nudContabilidad;
         private System.Windows.Forms.NumericUpDown nudEstadistica;
         private System.Windows.Forms.NumericUpDown nudMatematica;
-        private System.Windows.Forms.DataGridView dgvEstudiantes;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnActualizar;
+        public System.Windows.Forms.DataGridView dgvEstudiantes;
     }
 }
 

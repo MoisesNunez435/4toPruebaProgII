@@ -106,13 +106,13 @@ namespace Infraestructure
             {
                 if (t == null)
                 {
-                    throw new ArgumentNullException("El objeto empleado no puede ser null.");
+                    throw new ArgumentNullException("El objeto estudiante no puede ser null.");
                 }
 
                 Estudiante estudiante = FindByCarnet(t.Carnet);
                 if (estudiante == null)
                 {
-                    throw new Exception($"El objeto empleado con esa dni no existe.");
+                    throw new Exception($"El objeto estudiante con ese carnet no existe.");
                 }
 
                 estudiante.Nombres = t.Nombres;
